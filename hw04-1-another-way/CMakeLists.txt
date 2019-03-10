@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(hw04_1)
+add_definitions(-std=c++03)
+aux_source_directory(. DIR_SRCS)
+add_executable(hw04_1 ${DIR_SRCS})

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(hw04_2)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_definitions(-std=c++03)
+aux_source_directory(. DIR_SRCS)
+add_executable(hw04_2 ${DIR_SRCS})
+target_link_libraries(hw04_2 ${OpenCV_LIBS})
